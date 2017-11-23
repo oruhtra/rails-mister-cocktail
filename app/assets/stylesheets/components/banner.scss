@@ -1,0 +1,40 @@
+.banner {
+  color: white;
+  text-align: center;
+  height: 90vh;
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), asset-url('banner.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.half {
+  height: 50vh;
+}
+
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+.banner .button {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(1, 1, 1, 0.8);
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+}
+
+.banner .button:hover {
+  background-color: rgba(1, 1, 1, 1);
+}
