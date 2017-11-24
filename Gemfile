@@ -39,6 +39,7 @@ gem 'simple_form'
 gem 'figaro'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
+gem 'select2_simple_form', github: 'lndl/select2_simple_form', tag: '0.7.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
