@@ -10,7 +10,7 @@
       <% @cocktails.each do |c| %>
         <div class="col-xs-4">
           <%= link_to cocktail_path(c) do %>
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path c.photo, width: 300, height: 200%>')">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= c.photo? ? (cl_image_path c.photo, width: 300, height: 200) : ('https://picsum.photos/g/200/300') %>')">
               <div class="card-category"><%= c.name %></div>
               <div class="card-description">
                 <p><%= c.description[0..35] %>...</p>

@@ -1,4 +1,4 @@
-<div class="banner half" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path @cocktail.photo, crop: "thumb" %>')">
+<div class="banner half" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= @cocktail.photo? ? (cl_image_path @cocktail.photo) : ('https://picsum.photos/g/200/300') %>')">
   <div class="banner-content">
       <h1><%= @cocktail.name %></h1>
       <%= link_to edit_cocktail_path(@cocktail) do %>
