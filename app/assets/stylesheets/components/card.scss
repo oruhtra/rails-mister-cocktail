@@ -2,17 +2,16 @@
   margin: 20px 0;
   height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), asset-url('mojito.jpg');
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  text-overflow: ellipsis;
+  // text-overflow: ellipsis;
 
-  /* Required for text-overflow to do anything */
-  white-space: nowrap;
-  overflow: hidden;
+  // /* Required for text-overflow to do anything */
+  // white-space: nowrap;
+  // overflow: hidden;
 
   &:hover {
     opacity: 0.8;
