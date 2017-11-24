@@ -1,12 +1,12 @@
 <div class="banner">
   <div class="banner-content">
-      <%= link_to "Add a cocktail", new_cocktail_path, class: 'button'%>
+    <h1>The Cocktail Factory</h1>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-    <h2 class="text-center list-title"><em>List of all our cocktails</em></h2>
+    <h2 class="text-center list-title"><em>Cocktails</em></h2>
       <% @cocktails.each do |c| %>
         <div class="col-xs-4">
           <%= link_to cocktail_path(c) do %>
