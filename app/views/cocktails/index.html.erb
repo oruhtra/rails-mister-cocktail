@@ -4,9 +4,18 @@
     <p>
       <span id="banner-typed-text"></span>
     </p>
+    <div class="flex">
+      <%= select_tag "cocktail", options_from_collection_for_select(@cocktails,
+        :name, :name),
+        class: 'select2 select-button'%>
+        <div class="btn">
+          Search
+        </div>
+    </div>
 <!--     <h1>The Cocktail Factory</h1> -->
   </div>
 </div>
+
 
 <div class="container">
   <div class="row">
